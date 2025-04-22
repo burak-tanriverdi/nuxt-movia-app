@@ -7,6 +7,4 @@ export default defineNuxtConfig({
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
-
-  compatibilityDate: '2025-01-15',
-});
+ });

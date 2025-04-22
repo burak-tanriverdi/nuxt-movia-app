@@ -42,8 +42,11 @@ export default defineComponent({
     </div>
     <button @click.stop="toggleFavorite" class="absolute top-0 left-4 cursor-pointer flex items-center justify-center mt-4 mx-auto w-10 h-10 rounded-full bg-[#f0f0f080]">
       <font-awesome-icon 
-        :icon="[isFavorite ? 'fas' : 'far', 'heart']"
-        class="text-xl text-pink-700"
+      icon="fa-solid fa-star"
+      :class="[
+        'text-xl',
+        isFavorite ? 'text-pink-700' : 'text-gray-600'  // pink when fav, gray otherwise
+      ]"
       />
     </button>
   </div>
