@@ -1,6 +1,5 @@
 export async function useFetch(url) {
     try {
-
         const options = {
             method: 'GET',
             headers: {
