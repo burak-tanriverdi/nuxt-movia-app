@@ -6,6 +6,7 @@ const genres = { action: '28', comedy: '35', drama: '18', crime: '80' };
 
 <template>
   <MovieListPage
+    media-type="movie"
     page-title="Top Rated"
     sort-field="vote_average"
     :genres="genres"

@@ -57,8 +57,8 @@ watch([selectedSort, selectedFilter], fetchItems, { immediate: true });
       :page-title="pageTitle"
       :selected-sort="selectedSort"
       :selected-filter="selectedFilter"
-      @update-sort="val => selectedSort.value = val"
-      @update-filter="val => selectedFilter.value = val"
+      @update-sort="selectedSort = $event"
+      @update-filter="selectedFilter = $event"
     />
 
     <CategoryPageLayout :movies="movies" />
